@@ -66,9 +66,7 @@ export default function App() {
                                       source={{ uri: image }}
                                   />
                               ) : (
-                                  <Text>{`${name.charAt(0)} ${lastName.charAt(
-                                      0
-                                  )}`}</Text>
+                                  <Text>{`${name?.charAt(0) ?? ''} ${lastName?.charAt(0) ?? ''}`}</Text>
                               )}
                           </Pressable>
                       ),
@@ -88,9 +86,7 @@ export default function App() {
                                       source={{ uri: image }}
                                   />
                               ) : (
-                                  <Text>{`${name.charAt(0)} ${lastName.charAt(
-                                      0
-                                  )}`}</Text>
+                                  <Text>{`${name?.charAt(0) ?? ''} ${lastName?.charAt(0) ?? ''}`}</Text>
                               )}
                           </Pressable>
                       ),
